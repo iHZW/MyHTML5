@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
+    <!-- 网站说明 -->
+    <meta name="description" content="京东JD.COM-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。">
+    <!-- 关键字 -->
+    <meta name="Keywords" content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜,京东">
+
+    <link rel="shortcut icon" href="images/bitbug_favicon.ico" img />
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        li {
+            position: relative;
+            display: block;
+            float: left;
+            list-style: none;
+            width: 135px;
+            height: 185px;
+            background-color: cyan;
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: center;
+            box-sizing: border-box;
+            /* 滤镜模糊处理 */
+            filter: blur(5px);
+            /* transition: width 0.5s ease, height 0.5s ease; */
+            transition: all 0.5s;
+        }
+        
+        li::before {
+            content: '';
+            position: absolute;
+            display: none;
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3) url(images/play.png) no-repeat center;
+        }
+        
+        li:hover::before {
+            display: block;
+            box-shadow: 5px 5px 5px rgba(221, 236, 8, 0.986);
+            background-color: orange;
+        }
+        
+        li:hover {
+            filter: blur(0px);
+            width: 160px;
+        }
+        
+        .box {
+            width: 800px;
+            /* height: 400px; */
+            margin: 0 auto;
+            background-color: pink;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            /* 清楚浮动 clear */
+            /* overflow: hidden; */
+        }
+        
+        .radius {
+            border-radius: 10px;
+        }
+        
+        .left-box {
+            float: left;
+            background-color: gray;
+            width: 25%;
+            height: 380px;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .left-box:hover {
+            background-color: orange;
+        }
+        
+        .right-box {
+            float: left;
+            width: 590px;
+            /* height: 400px; */
+            height: auto;
+            background-color: transparent;
+            margin: 0px 0px 0px -10px;
+            background-color: green;
+        }
+        
+        .clear {
+            clear: both;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>习近平：加快实现高水平科技自立自强
+    </h1>
+    <p>就知道你在高校1</p>
+    <p>就知道你在高校2</p>
+    <p>就知道你在高校3</p>
+    <p>就知道你在高校4</p>
+    <p>就知道你在高校5</p>
+
+    <a href="#">我知道的</a>
+    <a href="#">我知道的</a>
+    <a href="#">我知道的</a>
+    <a href="#">我知道的</a>
+    <a href="#">我知道的</a>
+    <a href="#">我知道的</a>
+    <a href="#">我知道的</a>
+
+    <div class="box radius clearfix">
+
+        <div class="left-box radius clearfix">
+            左侧BOX
+        </div>
+
+        <div class="right-box radius clearfix">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+
+
+    </div>
+
+    <div class="box clearfix">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+    </div>
+
+</html>

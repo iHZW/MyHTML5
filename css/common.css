@@ -1,0 +1,28 @@
+/* 版心 */
+
+.w {
+    widows: 1200px;
+    height: auto;
+}
+
+.lf {
+    /* 左浮动 */
+    float: left;
+}
+
+.fr {
+    /* 右浮动 */
+    float: right;
+}
+
+.style_red {
+    color: red;
+}
+
+
+/* 快捷导航 */
+
+.shortcut {
+    height: 31px;
+    background-color: aqua;
+}
